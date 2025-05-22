@@ -10,7 +10,6 @@ output:
 linters:
   disable-all: true
   enable:
-    # Основные линтеры
     - gofmt
     - goimports
     - govet
@@ -20,8 +19,6 @@ linters:
     - errcheck
     - ineffassign
     - gosimple
-    
-    # Дополнительные (по желанию)
     - bodyclose
     - gocritic
     - goconst
@@ -31,7 +28,7 @@ linters:
 
 linters-settings:
   gocyclo:
-    min-complexity: 15  # Порог сложности функций
+    min-complexity: 15
   goconst:
     min-len: 3         # Минимальная длина строки для проверки дублирования
     min-occurrences: 3 # Минимальное количество повторений
